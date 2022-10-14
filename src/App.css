@@ -4,8 +4,8 @@ body {
 }
 
 .container {
-  margin: 2em;
-  border: 2px solid magenta;
+  margin: 4em 2em 2em 2em;
+  /* border: 2px solid magenta; */
   height: 80vh;
   display: flex;
   flex-direction: column;
