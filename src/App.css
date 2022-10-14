@@ -2,3 +2,73 @@ body {
   background-color: black;
   color: white;
 }
+
+.container {
+  margin: 2em;
+  border: 2px solid magenta;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: .5s;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%,
+  100% {
+    background-color: #ebe6ff;
+  }
+}
+
+
+button {
+  background-color: #9880ff;
+  border: 3px solid white;
+  border-radius: 8%;
+  padding: 2em;
+  color: white;
+  font-size: 1em;
+  font-weight: bolder;
+  margin: 7%;
+}
