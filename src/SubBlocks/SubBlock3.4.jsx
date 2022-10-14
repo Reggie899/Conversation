@@ -25,7 +25,7 @@ export default function SubBlock3dot4() {
               <button
                 onClick={() => {
                   setShowFinal("Wow, wer ist hier frech von uns beiden?");
-                  setTimeout(() => setCount("3.1"), 3000);
+                  setTimeout(() => setCount("4.5"), 3000);
                   setChoice(false);
                 }}
               >
@@ -36,7 +36,7 @@ export default function SubBlock3dot4() {
                   setShowFinal(
                     "Fair enough, aber du scheinst auch die Flirt-Fähigkeiten eines Gorillas zu haben."
                   );
-                  setTimeout(() => setCount("3.2"), 3000);
+                  setTimeout(() => setCount("4.6"), 3000);
                   setChoice(false);
                 }}
               >
