@@ -25,6 +25,13 @@ function App() {
       <Counter.Provider value={{ count, setCount }}>
         {count == 1 ? <ConversationBlock1 /> : null}
         {count[0] == 2 ? <ConversationBlock2 /> : null}
+        {count[0] == 3 ? <ConversationBlock3 /> : null}
+        {/* {count[0] == 4 ? <ConversationBlock4 /> : null}
+        {count[0] == 5 ? <ConversationBlock5 /> : null}
+        {count[0] == 6 ? <ConversationBlock6 /> : null}
+        {count[0] == 7 ? <ConversationBlock7 /> : null}
+        {count[0] == 8 ? <ConversationBlock8 /> : null} */}
+
       </Counter.Provider>
     </div>
   );
