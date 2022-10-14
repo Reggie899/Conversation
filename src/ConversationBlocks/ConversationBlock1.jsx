@@ -1,5 +1,4 @@
-import { isFlowBaseAnnotation } from "@babel/types";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
 
 export default function ConversationBlock1() {
@@ -9,30 +8,30 @@ export default function ConversationBlock1() {
   const { count, setCount } = useContext(Counter);
 
   setTimeout(() => setTyping(false), 3000);
-  setTimeout(() => setChoice(true), 5000);
-
+  useEffect(() => {
+    setTimeout(() => setChoice(true), 5000);
+  }, []); //using useEffect, because otherwise before page content changes, choices are visible again
 
   return (
     <div className="container">
-
-      {typing ? <h1 className="dot-flashing"></h1> :  <h1>Hey wie geht's?</h1> }
+      {typing ? <h1 className="dot-flashing"></h1> : <h1>Hey wie geht's?</h1>}
       <h1>{showFinal}</h1>
       {choice == true ? (
         <div>
           <button
             onClick={() => {
-              setShowFinal("Gut");
-             setTimeout(() => setCount("2.1"), 3000);
-              console.log(count[0]);
+              setShowFinal("Gut und selbst?");
+              setTimeout(() => setCount("2.1"), 3000);
+              setChoice(false);
             }}
           >
-            Gut
+            Gut und selbst?
           </button>
           <button
             onClick={() => {
               setShowFinal("Wow, du bist ja richtig kreativ 🙄");
-             setTimeout(() => setCount("2.2"), 3000);
-              console.log(count[0]);
+              setTimeout(() => setCount("2.2"), 3000);
+              setChoice(false);
             }}
           >
             Wow, du bist ja richtig kreativ.
