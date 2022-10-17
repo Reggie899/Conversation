@@ -31,7 +31,7 @@ export default function SubBlock3dot4() {
               <button
                 onClick={() => {
                   setShowFinal("Wow, wer ist hier frech von uns beiden?");
-                  setTimeout(() => setCount("4.5"), countTime);
+                  setTimeout(() => setCount("4.6"), countTime);
                   setChoice(false);
                 }}
               >
