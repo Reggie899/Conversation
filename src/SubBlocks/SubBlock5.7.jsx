@@ -1,10 +1,13 @@
+// versehentlich geswiped
+
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
+import eyePic from "../img/eye.jpg";
 import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
 
-export default function SubBlock4dot4() {
+export default function SubBlock5dot7() {
   const [choice, setChoice] = useState(false);
   const [showFinal, setShowFinal] = useState(null);
   const [typing, setTyping] = useState(true);
@@ -23,7 +26,10 @@ export default function SubBlock4dot4() {
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <h1>Du wirkst cool und fun. Und ich mag dein Lächeln. Und du mich?</h1>
+        <div>
+          <h1>Das ist süß von dir! Vielleicht können wir uns am Samstag sehen und uns weiter kennenlernen?</h1>
+          <img width="300" src={eyePic} />
+        </div>
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (
@@ -31,26 +37,24 @@ export default function SubBlock4dot4() {
           <button
             onClick={() => {
               setShowFinal(
-                "haha danke! Ich hab ausversehen nach rechts geswiped. Aber du wirkst so weit echt nett."
+                "Das klingt gut 🍀 Samstag Kino am Wasser?"
               );
-              setTimeout(() => setCount("5.6"), countTime);
+              setTimeout(() => setCount("6.3"), countTime);
               setChoice(false);
             }}
           >
-            haha danke! Ich hab ausversehen nach rechts geswiped. Aber du wirkst
-            so weit echt nett.{" "}
+            Das klingt gut 🍀 Samstag Kino am Wasser?{" "}
           </button>
           <button
             onClick={() => {
               setShowFinal(
-                "Du scheinst ein sozialer und kreativer Mensch zu sein. Das fand ich sehr ansprechend."
+                "Lass uns vielleicht noch ein bisschen länger hier schreiben, bevor wir uns treffen 😊"
               );
-              setTimeout(() => setCount("5.7"), countTime);
+              setTimeout(() => setCount("6.1"), countTime);
               setChoice(false);
             }}
           >
-            Du scheinst ein sozialer und kreativer Mensch zu sein. Das fand ich
-            sehr ansprechend.{" "}
+            Lass uns vielleicht noch ein bisschen länger hier schreiben, bevor wir uns treffen 😊{" "}
           </button>
         </div>
       ) : null}{" "}

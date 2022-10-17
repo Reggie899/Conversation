@@ -2,6 +2,8 @@ import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
 import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
+import { SetCountTime } from "../Context/SetCountTime";
+
 
 export default function ConversationBlock2dot1() {
   const [choice, setChoice] = useState(false);
@@ -10,6 +12,8 @@ export default function ConversationBlock2dot1() {
   const { count, setCount } = useContext(Counter);
   const { typingTime } = useContext(TypingTime);
   const { showChoicesTime } = useContext(ShowChoicesTime);
+  const { countTime } = useContext(SetCountTime);
+
 
   setTimeout(() => setTyping(false), typingTime);
   useEffect(() => {
@@ -29,7 +33,7 @@ export default function ConversationBlock2dot1() {
           <button
             onClick={() => {
               setShowFinal("Was sind deine Hobbies?");
-              setTimeout(() => setCount("3.1"), 3000);
+              setTimeout(() => setCount("3.1"), countTime);
               setChoice(false);
             }}
           >
@@ -43,7 +47,7 @@ export default function ConversationBlock2dot1() {
                   src="https://media4.giphy.com/media/nFFguNjdeotwc/200.gif"
                 />
               );
-              setTimeout(() => setCount("3.2"), 3000);
+              setTimeout(() => setCount("3.2"), countTime);
               setChoice(false);
             }}
           >

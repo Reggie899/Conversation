@@ -4,7 +4,7 @@ import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
 
-export default function SubBlock4dot4() {
+export default function SubBlock5dot5() {
   const [choice, setChoice] = useState(false);
   const [showFinal, setShowFinal] = useState(null);
   const [typing, setTyping] = useState(true);
@@ -23,7 +23,7 @@ export default function SubBlock4dot4() {
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <h1>Du wirkst cool und fun. Und ich mag dein Lächeln. Und du mich?</h1>
+        <img src="https://wallpapers-clan.com/wp-content/uploads/2022/08/meme-gif-pfp-1.gif" />
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (
@@ -31,26 +31,36 @@ export default function SubBlock4dot4() {
           <button
             onClick={() => {
               setShowFinal(
-                "haha danke! Ich hab ausversehen nach rechts geswiped. Aber du wirkst so weit echt nett."
+                <img
+                  width="200"
+                  src="https://i.pinimg.com/originals/3c/3a/a1/3c3aa1b78817b4154e96145f08937764.gif"
+                />
               );
-              setTimeout(() => setCount("5.6"), countTime);
+              setTimeout(() => setCount("5.5"), countTime);
               setChoice(false);
             }}
           >
-            haha danke! Ich hab ausversehen nach rechts geswiped. Aber du wirkst
-            so weit echt nett.{" "}
+            <img
+              width="200"
+              src="https://i.pinimg.com/originals/3c/3a/a1/3c3aa1b78817b4154e96145f08937764.gif"
+            />{" "}
           </button>
           <button
             onClick={() => {
               setShowFinal(
-                "Du scheinst ein sozialer und kreativer Mensch zu sein. Das fand ich sehr ansprechend."
+                <img
+                  width="200"
+                  src="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif"
+                />
               );
-              setTimeout(() => setCount("5.7"), countTime);
+              setTimeout(() => setCount("5.2"), countTime);
               setChoice(false);
             }}
           >
-            Du scheinst ein sozialer und kreativer Mensch zu sein. Das fand ich
-            sehr ansprechend.{" "}
+            <img
+              width="200"
+              src="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif"
+            />{" "}
           </button>
         </div>
       ) : null}{" "}

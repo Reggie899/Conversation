@@ -1,16 +1,22 @@
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
 import eyePic from "../img/eye.jpg"
+import { TypingTime } from "../Context/TypingTime";
+import { ShowChoicesTime } from "../Context/ShowChoicesTime"; 
+import { SetCountTime } from "../Context/SetCountTime";
 
 export default function SubBlock4dot1() {
   const [choice, setChoice] = useState(false);
   const [showFinal, setShowFinal] = useState(null);
   const [typing, setTyping] = useState(true);
   const { count, setCount } = useContext(Counter);
+  const { typingTime } = useContext(TypingTime);
+  const { showChoicesTime } = useContext(ShowChoicesTime);
+  const { countTime } = useContext(SetCountTime);
 
-  setTimeout(() => setTyping(false), 3000);
+  setTimeout(() => setTyping(false), typingTime);
   useEffect(() => {
-    setTimeout(() => setChoice(true), 4500);
+    setTimeout(() => setChoice(true), showChoicesTime);
   }, []); //using useEffect, because otherwise before page content changes, choices are visible again
 
   return (
@@ -29,7 +35,7 @@ export default function SubBlock4dot1() {
               <button
                 onClick={() => {
                   setShowFinal("Wow, vielleicht kannst du auch mal meine zeichnen...");
-                  setTimeout(() => setCount("5.1"), 3000);
+                  setTimeout(() => setCount("5.1"), countTime);
                   setChoice(false);
                 }}
               >
@@ -40,7 +46,7 @@ export default function SubBlock4dot1() {
                   setShowFinal(
                    "Bist du 10?"
                   );
-                  setTimeout(() => setCount("5.2"), 3000);
+                  setTimeout(() => setCount("5.2"), countTime);
                   setChoice(false);
                 }}
               >

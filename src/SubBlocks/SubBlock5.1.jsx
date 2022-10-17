@@ -1,10 +1,11 @@
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
+import eyePic from "../img/eye.jpg";
 import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
 
-export default function SubBlock4dot4() {
+export default function SubBlock5dot1() {
   const [choice, setChoice] = useState(false);
   const [showFinal, setShowFinal] = useState(null);
   const [typing, setTyping] = useState(true);
@@ -23,7 +24,10 @@ export default function SubBlock4dot4() {
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <h1>Du wirkst cool und fun. Und ich mag dein Lächeln. Und du mich?</h1>
+        <div>
+          <h1>Sehr gerne! Wie wäre es am Samstag in einem Café</h1>
+          <img width="300" src={eyePic} />
+        </div>
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (
@@ -31,26 +35,24 @@ export default function SubBlock4dot4() {
           <button
             onClick={() => {
               setShowFinal(
-                "haha danke! Ich hab ausversehen nach rechts geswiped. Aber du wirkst so weit echt nett."
+                "Lass uns lieber erst noch länger schreiben und online kennenlernen."
               );
-              setTimeout(() => setCount("5.6"), countTime);
+              setTimeout(() => setCount("6.1"), countTime);
               setChoice(false);
             }}
           >
-            haha danke! Ich hab ausversehen nach rechts geswiped. Aber du wirkst
-            so weit echt nett.{" "}
+            Lass uns lieber erst noch länger schreiben und online kennenlernen.{" "}
           </button>
           <button
             onClick={() => {
               setShowFinal(
-                "Du scheinst ein sozialer und kreativer Mensch zu sein. Das fand ich sehr ansprechend."
+                "Ja, das passt mir gut. Ich schlage vor, im Café Sunrise."
               );
-              setTimeout(() => setCount("5.7"), countTime);
+              setTimeout(() => setCount("6.2"), countTime);
               setChoice(false);
             }}
           >
-            Du scheinst ein sozialer und kreativer Mensch zu sein. Das fand ich
-            sehr ansprechend.{" "}
+            Ja, das passt mir gut. Ich schlage vor, im Café Sunrise.{" "}
           </button>
         </div>
       ) : null}{" "}
