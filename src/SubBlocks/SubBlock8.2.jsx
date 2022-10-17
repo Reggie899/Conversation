@@ -1,12 +1,10 @@
-// versehentlich geswiped
-
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
 import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
 
-export default function SubBlock6dot1() {
+export default function ConversationBlock8dot2() {
   const [choice, setChoice] = useState(false);
   const [showFinal, setShowFinal] = useState(null);
   const [typing, setTyping] = useState(true);
@@ -25,37 +23,8 @@ export default function SubBlock6dot1() {
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <div>
-          <h1>Ja klar, gar kein Problem.</h1>
-        </div>
+        <h1>Bis Samstag 👋 Ich freue mich!</h1>
       )}
-      <h1>{showFinal}</h1>
-      {choice == true ? (
-        <div>
-          <button
-            onClick={() => {
-              setShowFinal(
-                "Was isst du gerne? 🍝"
-              );
-              setTimeout(() => setCount("7.1"), countTime);
-              setChoice(false);
-            }}
-          >
-            Was isst du gerne? 🍝{" "}
-          </button>
-          <button
-            onClick={() => {
-              setShowFinal(
-                "Du bist so verständnisvoll. Wie cool!"
-              );
-              setTimeout(() => setCount("5.2"), countTime);
-              setChoice(false);
-            }}
-          >
-            Du bist so verständnisvoll. Wie cool!{" "}
-          </button>
-        </div>
-      ) : null}{" "}
     </div>
   );
 }

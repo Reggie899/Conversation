@@ -24,7 +24,7 @@ export default function SubBlock5dot1() {
         <h1 className="dot-flashing"></h1>
       ) : (
         <div>
-          <h1>Sehr gerne! Wie wäre es am Samstag in einem Café</h1>
+          <h1>Sehr gerne! Wie wäre es am Samstag in einem Café.</h1>
         </div>
       )}
       <h1>{showFinal}</h1>

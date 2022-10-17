@@ -1,14 +1,10 @@
-//Café Sunrise
-
-// versehentlich geswiped
-
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
 import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
 
-export default function SubBlock6dot2() {
+export default function ConversationBlock7dot3() {
   const [choice, setChoice] = useState(false);
   const [showFinal, setShowFinal] = useState(null);
   const [typing, setTyping] = useState(true);
@@ -27,34 +23,33 @@ export default function SubBlock6dot2() {
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <div>
-          <h1>Café Sunset finde ich persönlich besser. Aber ich bin da offen.</h1>
-        </div>
+        <h1>Klasse, dann sehen wir uns Samstag um 14 Uhr im Sunrise.</h1>
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (
         <div>
           <button
             onClick={() => {
-              setShowFinal(
-                "Im Café Sunset hab ich Hausverbot 🫣 .. lass uns lieber in Sunrise treffen."
-              );
-              setTimeout(() => setCount("7.2"), countTime);
+              setShowFinal("Ich freue mich! Bis dann! 🙂");
+              setTimeout(() => setCount("8.2"), countTime);
               setChoice(false);
             }}
           >
-            Im Café Sunset hab ich Hausverbot 🫣 .. lass uns lieber in Sunrise treffen.{" "}
+            Ich freue mich! Bis dann! 🙂
           </button>
           <button
             onClick={() => {
               setShowFinal(
-                "Okay, dann treffen wir uns im Sunset! Um 14 Uhr?"
+                <img
+                  height="120vh"
+                  src="Warte, ich hab es mir doch anders überlegt."
+                />
               );
-              setTimeout(() => setCount("7.3"), countTime);
+              setTimeout(() => setCount("5.2"), countTime);
               setChoice(false);
             }}
           >
-            Okay, dann treffen wir uns im Sunset! Um 14 Uhr?{" "}
+            Warte, ich hab es mir doch anders überlegt.
           </button>
         </div>
       ) : null}{" "}

@@ -1,6 +1,4 @@
-//Café Sunrise
-
-// versehentlich geswiped
+// Antwort auf die Frage, warum man da auch Hausverbot hat
 
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
@@ -8,7 +6,7 @@ import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
 
-export default function SubBlock6dot2() {
+export default function ConversationBlock9dot1() {
   const [choice, setChoice] = useState(false);
   const [showFinal, setShowFinal] = useState(null);
   const [typing, setTyping] = useState(true);
@@ -27,34 +25,36 @@ export default function SubBlock6dot2() {
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <div>
-          <h1>Café Sunset finde ich persönlich besser. Aber ich bin da offen.</h1>
-        </div>
+        <h1>
+          Duuuuu 😱 OMG dann kennen wir uns jaaaaa! Wollen wir zusammen dann das
+          Sunrise unsicher machen?
+        </h1>
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (
         <div>
           <button
             onClick={() => {
-              setShowFinal(
-                "Im Café Sunset hab ich Hausverbot 🫣 .. lass uns lieber in Sunrise treffen."
-              );
-              setTimeout(() => setCount("7.2"), countTime);
+              setShowFinal("Auf jeden Fall 💪 Samstag. 14 Uhr. Sunrise 🌅");
+              setTimeout(() => setCount("8.2"), countTime);
               setChoice(false);
             }}
           >
-            Im Café Sunset hab ich Hausverbot 🫣 .. lass uns lieber in Sunrise treffen.{" "}
+            Auf jeden Fall 💪 Samstag. 14 Uhr. Sunrise 🌅{" "}
           </button>
           <button
             onClick={() => {
               setShowFinal(
-                "Okay, dann treffen wir uns im Sunset! Um 14 Uhr?"
+                <img
+                  height="120vh"
+                  src="Sorry! Ich weiß jetzt, wer du bist 😅 Also: nein."
+                />
               );
-              setTimeout(() => setCount("7.3"), countTime);
+              setTimeout(() => setCount("3.3"), countTime);
               setChoice(false);
             }}
           >
-            Okay, dann treffen wir uns im Sunset! Um 14 Uhr?{" "}
+            Sorry! Ich weiß jetzt, wer du bist 😅 Also: nein.
           </button>
         </div>
       ) : null}{" "}
