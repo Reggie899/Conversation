@@ -36,7 +36,7 @@ export default function SubBlock5dot5() {
                   src="https://i.pinimg.com/originals/3c/3a/a1/3c3aa1b78817b4154e96145f08937764.gif"
                 />
               );
-              setTimeout(() => setCount("5.5"), countTime);
+              setTimeout(() => setCount("6.5"), countTime);
               setChoice(false);
             }}
           >
