@@ -2,7 +2,6 @@
 
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
-import eyePic from "../img/eye.jpg";
 import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
@@ -28,7 +27,6 @@ export default function SubBlock5dot3() {
       ) : (
         <div>
           <h1>Herr der Ringe mag ich auch. Am Samstag kommt der neue Teil in die Kinos. Wollen wir zusammen hin?</h1>
-          <img width="300" src={eyePic} />
         </div>
       )}
       <h1>{showFinal}</h1>
