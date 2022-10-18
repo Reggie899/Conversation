@@ -165,6 +165,7 @@ color: wheat;
   }
   5% {
     rotate: -10deg;
+    transform: scale(0.5);
   }
   20% {
     rotate: 20deg;
@@ -174,16 +175,19 @@ color: wheat;
     rotate: -30deg;
   }
   45% {
+    transform: scale(1.5);
     rotate: -10deg;
   }
-  55% {
+  /* 55% {
     rotate: 20deg;
-  }
+  } */
   60% {
     rotate: 30deg;
+    transform: scale(0.5);
   }
   70% {
     rotate: -10deg;
+    transform: scale(0.8);
   }
   79% {
     rotate: 20deg;
@@ -198,6 +202,7 @@ color: wheat;
   100% {
     bottom: 60px;
     rotate: 0deg;
+    transform: scale(1);
   }
 }
 
