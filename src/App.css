@@ -51,6 +51,7 @@ color: wheat;
   border-radius: 50%;
   border: 2px solid blue;
   margin-top: 30%;
+  display: flex;
 }
 
 .matchDiv {
@@ -104,16 +105,16 @@ color: wheat;
     margin-left: 50%;
     border-color: gold;
   }
-  60% {
-    margin-left: 40%;
-    border-color: gold;
-  }
   70% {
-    margin-left: 40%;
+    margin-left: 35%;
     border-color: gold;
   }
-  85% {
+  /* 70% {
     margin-left: 40%;
+    border-color: gold;
+  } */
+  75% {
+    margin-left: 30%;
     border-color: gold;
   }
   100% {
@@ -137,16 +138,16 @@ color: wheat;
     margin-right: 50%;
     border-color: gold;
   }
-  60% {
-    margin-right: 40%;
-    border-color: gold;
-  }
   70% {
-    margin-right: 40%;
+    margin-right: 35%;
     border-color: gold;
   }
-  85% {
+  /* 70% {
     margin-right: 40%;
+    border-color: gold;
+  } */
+  75% {
+    margin-right: 30%;
     border-color: gold;
   }
   100% {
