@@ -47,7 +47,7 @@ function App() {
           </Counter.Provider>
         </TypingTime.Provider>
       </ShowChoicesTime.Provider>
-      <div>HowImetYourDad.org</div>
+      <div className="myCode"> <a href="https://github.com/Reggie899/Conversation" target="_blank">HowImetYourDad.org</a></div>
     </div>
   );
 }

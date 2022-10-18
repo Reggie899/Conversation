@@ -9,6 +9,20 @@ body {
   color: white;
 }
 
+.myCode a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-left: 5%;
+}
+
+.myCode a:hover {
+content: "My Github Code";
+text-decoration: underline;
+color: wheat;
+}
+
 .container {
   margin: 4em 2em 2em 2em;
   /* border: 2px solid magenta; */
@@ -39,7 +53,7 @@ body {
 .frame img {
   position: absolute;
   bottom: 0;
-  left: 60px;
+  left: 80px;
   height: 40%;
   animation: shakeMatch 3s forwards;
 }
