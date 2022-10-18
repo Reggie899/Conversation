@@ -6,8 +6,8 @@ import match from "./img/Match2.png";
 
 export default function StartAnimation() {
 
-    // const { count, setCount } = useContext(Counter);
-    // setTimeout(() => setCount(1), 4000);
+    const { count, setCount } = useContext(Counter);
+    setTimeout(() => setCount(1), 4000);
 
   return (
     <div className="container">
