@@ -11,13 +11,12 @@ body {
   /* border: 5px solid magenta; */
 }
 
-.myCode {
-  /* border: 3px solid blue; */
+/* .myCode {
   height: 20vh;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-}
+} */
 
 .myCode a {
   text-decoration: none;
@@ -34,13 +33,50 @@ body {
   color: wheat;
 }
 
-.container {
+footer {
+  display: flex;
+  align-items: center;
+  /* border: 3px solid magenta; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  height: 7vh;
+  padding-left: 2%;
+}
+
+
+
+.containerAnimation {
   margin: 0em 0em 0em 0em;
   /* border: 2px solid magenta; */
   height: 80vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  /* padding-top: 4em; */
+  padding: 4em 1em 2em 1em;
+  /* border: 2px solid magenta; */
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1:first-child {
+margin-bottom: 2em;
+}
+
+.container div:nth-child(3), .container h1:nth-child(2) {
+  /* border: 5px solid green; */
+  text-align: right;
+}
+
+.container h1:nth-child(2) {
+  padding-right: 2em;
 }
 
 .frame {
@@ -281,4 +317,8 @@ button {
   font-size: 1em;
   font-weight: bolder;
   margin: 7%;
+}
+
+button:nth-child(2) {
+  margin-bottom: 20%;
 }
