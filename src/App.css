@@ -50,11 +50,19 @@ color: wheat;
   margin-top: 30%;
 }
 
-.frame img {
-  position: absolute;
-  bottom: 0;
-  left: 100px;
-  height: 40%;
+.matchDiv {
+  /* border: 3px solid blue; */
+  height: 60%;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.matchDiv img {
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* left: 100px; */
+  margin: 0 auto;
+  height: 60%;
   animation: shakeMatch 3s forwards;
 }
 
