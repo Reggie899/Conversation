@@ -8,6 +8,7 @@ import { ShowChoicesTime } from "./Context/ShowChoicesTime";
 import { SetCountTime } from "./Context/SetCountTime";
 
 // import ConversationBlocks
+import StartAnimation from "./StartAnimation";
 import ConversationBlock1 from "./ConversationBlocks/ConversationBlock1";
 import ConversationBlock2 from "./ConversationBlocks/ConversationBlock2";
 import ConversationBlock3 from "./ConversationBlocks/ConversationBlock3";
@@ -21,7 +22,7 @@ import ConversationBlock10 from "./ConversationBlocks/ConversationBlock10";
 
 function App() {
   // state variables
-  const [count, setCount] = useState("1");
+  const [count, setCount] = useState("0");
   const [showChoicesTime, setShowChoicesTime] = useState(4500);
   const [typingTime, setTypingTime] = useState(3000);
   const [countTime, setCountTime] = useState(3000);
@@ -32,6 +33,7 @@ function App() {
         <TypingTime.Provider value={{ typingTime }}>
           <Counter.Provider value={{ count, setCount }}>
             <SetCountTime.Provider value={{ countTime }}>
+              {count == 0 ? <StartAnimation/> : null }
               {count == 1 ? <ConversationBlock1 /> : null}
               {count[0] == 2 ? <ConversationBlock2 /> : null}
               {count[0] == 3 ? <ConversationBlock3 /> : null}
@@ -45,6 +47,7 @@ function App() {
           </Counter.Provider>
         </TypingTime.Provider>
       </ShowChoicesTime.Provider>
+      <div>HowImetYourDad.org</div>
     </div>
   );
 }
