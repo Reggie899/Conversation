@@ -54,7 +54,7 @@ color: wheat;
 }
 
 .matchDiv {
-  /* border: 3px solid blue; */
+  border: 3px solid blue;
   height: 60%;
   display: flex;
   /* justify-content: center; */
@@ -66,7 +66,7 @@ color: wheat;
   /* left: 100px; */
   padding-top: 10%;
   margin: 0 auto;
-  height: 60%;
+  height: 80%;
   animation: shakeMatch 3s forwards;
 }
 
