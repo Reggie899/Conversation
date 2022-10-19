@@ -48,13 +48,13 @@ export default function SubBlock6dot2() {
           <button
             onClick={() => {
               setShowFinal(
-                "Okay, dann treffen wir uns im Sunset! Um 14 Uhr?"
+                "Okay, dann treffen wir uns im Sunrise! Um 14 Uhr?"
               );
               setTimeout(() => setCount("7.3"), countTime);
               setChoice(false);
             }}
           >
-            Okay, dann treffen wir uns im Sunset! Um 14 Uhr?{" "}
+            Okay, dann treffen wir uns im Sunrise! Um 14 Uhr?{" "}
           </button>
         </div>
       ) : null}{" "}

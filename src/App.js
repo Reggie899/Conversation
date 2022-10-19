@@ -23,9 +23,9 @@ import ConversationBlock10 from "./ConversationBlocks/ConversationBlock10";
 function App() {
   // state variables
   const [count, setCount] = useState("0");
-  const [showChoicesTime, setShowChoicesTime] = useState(4500);
-  const [typingTime, setTypingTime] = useState(3000);
-  const [countTime, setCountTime] = useState(3000);
+  const [showChoicesTime, setShowChoicesTime] = useState(0);
+  const [typingTime, setTypingTime] = useState(0);
+  const [countTime, setCountTime] = useState(0);
 
   return (
     <div className="App">
@@ -41,8 +41,7 @@ function App() {
               {count[0] == 5 ? <ConversationBlock5 /> : null}
               {count[0] == 6 ? <ConversationBlock6 /> : null}
               {count[0] == 7 ? <ConversationBlock7 /> : null}
-              {/* 
-        {count[0] == 8 ? <ConversationBlock8 /> : null} */}
+              {count[0] == 8 ? <ConversationBlock8 /> : null}
             </SetCountTime.Provider>
           </Counter.Provider>
         </TypingTime.Provider>

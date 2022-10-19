@@ -1,5 +1,5 @@
 import SubBlock5dot1 from "../SubBlocks/SubBlock5.1";
-import SubBlock5dot2 from "../SubBlocks/SubBlock5.2";
+// import SubBlock5dot2 from "../SubBlocks/SubBlock5.2";
 import SubBlock5dot3 from "../SubBlocks/SubBlock5.3";
 import SubBlock5dot4 from "../SubBlocks/SubBlock5.4";
 import SubBlock5dot5 from "../SubBlocks/SubBlock5.5";
@@ -16,7 +16,7 @@ export default function ConversationBlock5() {
   return (
     <div className="container">
       {count == 5.1 ? <SubBlock5dot1 /> : null}
-      {count == 5.2 ? <SubBlock5dot2 /> : null}
+      {/* {count == 5.2 ? <SubBlock5dot2 /> : null} */}
       {count == 5.3 ? <SubBlock5dot3 /> : null}
       {count == 5.4 ? <SubBlock5dot4 /> : null}
       {count == 5.5 ? <SubBlock5dot5 /> : null}

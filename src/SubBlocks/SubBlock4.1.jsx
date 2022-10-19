@@ -46,7 +46,7 @@ export default function SubBlock4dot1() {
                   setShowFinal(
                    "Bist du 10?"
                   );
-                  setTimeout(() => setCount("5.2"), countTime);
+                  setTimeout(() => setCount("4.5"), countTime);
                   setChoice(false);
                 }}
               >

@@ -48,7 +48,7 @@ export default function SubBlock6dot1() {
               setShowFinal(
                 "Du bist so verständnisvoll. Wie cool!"
               );
-              setTimeout(() => setCount("5.2"), countTime);
+              setTimeout(() => setCount("4.5"), countTime);
               setChoice(false);
             }}
           >

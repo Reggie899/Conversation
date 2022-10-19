@@ -46,7 +46,7 @@ export default function SubBlock4dot2() {
                   setChoice(false);
                 }}
               >
-                "Artsy! Was gefällt dir daran?"
+                Artsy! Was gefällt dir daran?
               </button>
             </div>
           ) : null}{" "}

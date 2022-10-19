@@ -3,7 +3,7 @@ import { Counter } from "../Context/Counter";
 import { TypingTime } from "../Context/TypingTime";
 import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
-import scary from "../img/scary.jpg"
+import scary from "../img/scary.jpg";
 
 export default function SubBlock6dot4() {
   const [choice, setChoice] = useState(false);
@@ -25,7 +25,8 @@ export default function SubBlock6dot4() {
         <h1 className="dot-flashing"></h1>
       ) : (
         <div>
-<img width="300" src={scary} />        </div>
+          <img width="300" src={scary} />{" "}
+        </div>
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (
@@ -43,14 +44,12 @@ export default function SubBlock6dot4() {
           </button>
           <button
             onClick={() => {
-              setShowFinal(
-                "haha.. ja, aber das ist ja harmlos... "
-              );
+              setShowFinal("haha.. ja, aber das ist ja harmlos... ");
               setTimeout(() => setCount("7.4"), countTime);
               setChoice(false);
             }}
           >
-            haha.. ja, aber das ist ja harmlos... {" "}
+            haha.. ja, aber das ist ja harmlos...{" "}
           </button>
         </div>
       ) : null}{" "}

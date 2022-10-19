@@ -41,7 +41,7 @@ export default function SubBlock6dot3() {
               setShowFinal(
                 "Nein, einen Film schauen reicht mir."
               );
-              setTimeout(() => setCount("5.2"), countTime);
+              setTimeout(() => setCount("4.5"), countTime);
               setChoice(false);
             }}
           >
@@ -50,13 +50,13 @@ export default function SubBlock6dot3() {
           <button
             onClick={() => {
               setShowFinal(
-                "Sehr gerne! 14 Uhr im Sunset? Das ist ja nebenan."
+                "Sehr gerne! 14 Uhr im Sunrise? Das ist ja nebenan."
               );
               setTimeout(() => setCount("7.3"), countTime);
               setChoice(false);
             }}
           >
-            Sehr gerne! 14 Uhr im Sunset? Das ist ja nebenan.{" "}
+            Sehr gerne! 14 Uhr im Sunrise? Das ist ja nebenan.{" "}
           </button>
         </div>
       ) : null}{" "}

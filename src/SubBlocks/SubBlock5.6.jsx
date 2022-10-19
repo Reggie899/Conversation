@@ -37,7 +37,7 @@ export default function SubBlock5dot6() {
               setShowFinal(
                 "Nur ein bisschen 😅"
               );
-              setTimeout(() => setCount("5.2"), countTime);
+              setTimeout(() => setCount("4.5"), countTime);
               setChoice(false);
             }}
           >

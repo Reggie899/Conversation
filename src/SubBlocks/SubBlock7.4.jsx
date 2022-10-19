@@ -45,7 +45,7 @@ export default function ConversationBlock7dot4() {
                   src="Okay 🙄"
                 />
               );
-              setTimeout(() => setCount("5.2"), countTime);
+              setTimeout(() => setCount("4.5"), countTime);
               setChoice(false);
             }}
           >

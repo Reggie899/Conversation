@@ -36,7 +36,7 @@ export default function SubBlock5dot5() {
                   src="https://media4.giphy.com/media/7lLSd8EKbzOWx2qw5g/giphy.gif"
                 />
               );
-              setTimeout(() => setCount("6.5"), countTime);
+              setTimeout(() => setCount("7.5"), countTime);
               setChoice(false);
             }}
           >
@@ -53,7 +53,7 @@ export default function SubBlock5dot5() {
                   src="https://media3.giphy.com/media/qrIsXgEdorkI/200w.gif?cid=82a1493b3sj2qs90952x4s4qmri17hojkkfj44mlzyol2z2n&rid=200w.gif&ct=g"
                 />
               );
-              setTimeout(() => setCount("5.2"), countTime);
+              setTimeout(() => setCount("7.5"), countTime);
               setChoice(false);
             }}
           >

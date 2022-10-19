@@ -31,7 +31,7 @@ export default function ConversationBlock9dot2() {
           <button
             onClick={() => {
                 setShowFinal("Yes 🙌 Bis dann!");
-              setTimeout(() => setCount("9.1"), countTime);
+              setTimeout(() => setCount("8.2"), countTime);
               setChoice(false);
             }}
           >

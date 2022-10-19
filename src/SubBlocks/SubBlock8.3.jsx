@@ -18,13 +18,18 @@ export default function ConversationBlock8dot3() {
     setTimeout(() => setChoice(true), showChoicesTime);
   }, []); //using useEffect, because otherwise before page content changes, choices are visible again
 
+
   return (
     <div className="container">
-      {typing ? (
+      {choice == true ? (
+        <div>
+Leider wurdest du nur noch geghosted und hast den Match aufgelöst. 
+<button onClick={() => setCount(0)}>Nochmal spielen</button>
+          </div>) :   (typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
         <h1>Danke dir auch 😃</h1>
-      )}
+      ))}{" "}
     </div>
   );
 }
