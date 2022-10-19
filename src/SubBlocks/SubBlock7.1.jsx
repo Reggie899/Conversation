@@ -39,12 +39,7 @@ export default function ConversationBlock7dot1() {
           </button>
           <button
             onClick={() => {
-              setShowFinal(
-                <img
-                  height="120vh"
-                  src="Ich auch! Echt cool! Im Café Sunrise gibt es Samstag um 14 Uhr eine vegane Verkostung. Wollen wir da vielleicht hin?"
-                />
-              );
+              setShowFinal("Ich auch! Echt cool! Im Café Sunrise gibt es Samstag um 14 Uhr eine vegane Verkostung. Wollen wir da vielleicht hin?");
               setTimeout(() => setCount("7.3"), countTime);
               setChoice(false);
             }}
