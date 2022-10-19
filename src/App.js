@@ -23,9 +23,9 @@ import ConversationBlock10 from "./ConversationBlocks/ConversationBlock10";
 function App() {
   // state variables
   const [count, setCount] = useState("0");
-  const [showChoicesTime, setShowChoicesTime] = useState(0);
-  const [typingTime, setTypingTime] = useState(0);
-  const [countTime, setCountTime] = useState(0);
+  const [showChoicesTime, setShowChoicesTime] = useState(4500);
+  const [typingTime, setTypingTime] = useState(3000);
+  const [countTime, setCountTime] = useState(3000);
 
   return (
     <div className="App">
