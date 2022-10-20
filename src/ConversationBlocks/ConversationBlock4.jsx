@@ -13,7 +13,7 @@ export default function ConversationBlock4() {
   const { count, setCount } = useContext(Counter);
 
   return (
-    <div className="container">
+    <div className="containerBlock">
       {count == 4.1 ? <SubBlock4dot1 /> : null}
       {count == 4.2 ? <SubBlock4dot2 /> : null}
       {count == 4.3 ? <SubBlock4dot3 /> : null}

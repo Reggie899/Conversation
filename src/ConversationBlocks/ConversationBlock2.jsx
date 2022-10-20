@@ -7,7 +7,7 @@ export default function ConversationBlock2() {
   const { count, setCount } = useContext(Counter);
 
   return (
-    <div className="container">
+    <div className="containerBlock">
       {count == 2.1 ? <SubBlock2dot1 /> : null}
       {count == 2.2 ? <SubBlock2dot2 /> : null}
     </div>
