@@ -27,7 +27,7 @@ export default function SubBlock1() {
           <button
             onClick={() => {
               setShowFinal("Gut und selbst?");
-              setTimeout(() => setCount("2.1"), countTime);
+              // setTimeout(() => setCount("2.1"), countTime);
               setChoice(false);
             }}
           >
