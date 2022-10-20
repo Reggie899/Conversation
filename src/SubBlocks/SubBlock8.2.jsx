@@ -15,16 +15,17 @@ export default function ConversationBlock8dot2() {
 
   setTimeout(() => setTyping(false), typingTime);
   useEffect(() => {
-    setTimeout(() => setChoice(true), showChoicesTime);
+    setTimeout(() => setChoice(true), 5500);
   }, []); //using useEffect, because otherwise before page content changes, choices are visible again
 
   return (
     <div className="container">
-      {typing ? (
+    {choice ? <button onClick={() => setCount(0)}>Nochmal spielen</button>
+ : (typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
         <h1>Bis Samstag 👋 Ich freue mich!</h1>
-      )}
+      ))}
     </div>
   );
 }

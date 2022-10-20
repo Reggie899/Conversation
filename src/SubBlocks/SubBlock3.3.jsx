@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
 import { TypingTime } from "../Context/TypingTime";
-import { ShowChoicesTime } from "../Context/ShowChoicesTime"; 
+import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
 
 export default function SubBlock3dot3() {
@@ -20,11 +20,8 @@ export default function SubBlock3dot3() {
 
   return (
     <div className="container">
-
-        <h1>Du hast den Match aufgelöst.</h1>
-
-
-         <button onClick={()=>setCount(1)}>Nochmal spielen</button>
-        </div>
+      <h1>Du hast den Match aufgelöst.</h1>
+      <button onClick={() => setCount(0)}>Nochmal spielen</button>
+    </div>
   );
 }

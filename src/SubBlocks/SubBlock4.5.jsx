@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { Counter } from "../Context/Counter";
 import { TypingTime } from "../Context/TypingTime";
-import { ShowChoicesTime } from "../Context/ShowChoicesTime"; 
+import { ShowChoicesTime } from "../Context/ShowChoicesTime";
 import { SetCountTime } from "../Context/SetCountTime";
 
 export default function SubBlock4dot5() {
@@ -20,7 +20,8 @@ export default function SubBlock4dot5() {
 
   return (
     <div className="container">
-            <h1>Das Match wurde aufgelöst 😓</h1>
-        </div>
+      <h1>Das Match wurde aufgelöst 😓</h1>
+      <button onClick={() => setCount(0)}>Nochmal spielen</button>
+    </div>
   );
 }
