@@ -18,12 +18,16 @@ export default function SubBlock5dot5() {
     setTimeout(() => setChoice(true), showChoicesTime);
   }, []); //using useEffect, because otherwise before page content changes, choices are visible again
 
+const gif1 = "https://i.pinimg.com/originals/3c/3a/a1/3c3aa1b78817b4154e96145f08937764.gif";
+const gif2 = "https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif";
+
   return (
     <div className="container">
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
         <img 
+        width={"200px"}
         style={{marginBottom: "2%"}}
         src="https://wallpapers-clan.com/wp-content/uploads/2022/08/meme-gif-pfp-1.gif" />
       )}
@@ -33,27 +37,31 @@ export default function SubBlock5dot5() {
           <button
             onClick={() => {
               setShowFinal(
-                <img
-                  width="200"
-                  src="https://i.pinimg.com/originals/3c/3a/a1/3c3aa1b78817b4154e96145f08937764.gif"
-                />
-              );
+                <div className="divGifChoiceContainer">
+                <div
+                  className="divGifChoice"
+                  style={{ backgroundImage: `url(${gif1})` }}
+                ></div>{" "}
+              </div>
+            );
               setTimeout(() => setCount("4.5"), countTime);
               setChoice(false);
             }}
           >
             <img
               width="200"
-              src="https://i.pinimg.com/originals/3c/3a/a1/3c3aa1b78817b4154e96145f08937764.gif"
+              src={gif1}
             />{" "}
           </button>
           <button
             onClick={() => {
               setShowFinal(
-                <img
-                  width="200"
-                  src="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif"
-                />
+                <div className="divGifChoiceContainer">
+                  <div
+                    className="divGifChoice"
+                    style={{ backgroundImage: `url(${gif2})` }}
+                  ></div>{" "}
+                </div>
               );
               setTimeout(() => setCount("6.5"), countTime);
               setChoice(false);
@@ -61,7 +69,7 @@ export default function SubBlock5dot5() {
           >
             <img
               width="200"
-              src="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif"
+              src={gif2}
             />{" "}
           </button>
         </div>

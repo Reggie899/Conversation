@@ -20,12 +20,15 @@ export default function ConversationBlock2dot1() {
     setTimeout(() => setChoice(true), showChoicesTime);
   }, []); //using useEffect, because otherwise before page content changes, choices are visible again
 
+
+const gif1 = "https://media4.giphy.com/media/nFFguNjdeotwc/200.gif";
+
   return (
     <div className="container">
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <h1>Danke auch ganz gut!</h1>
+        <h1>Danke, auch ganz gut!</h1>
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (
@@ -42,18 +45,16 @@ export default function ConversationBlock2dot1() {
           <button
             onClick={() => {
               setShowFinal(
-                <img
-                  height="120vh"
-                  src="https://media4.giphy.com/media/nFFguNjdeotwc/200.gif"
-                />
-              );
+                <div className="divGifChoiceContainer">
+                <div className="divGifChoice" style={{backgroundImage: `url(${gif1})`}}>
+            </div> </div>);
               setTimeout(() => setCount("3.2"), countTime);
               setChoice(false);
             }}
           >
             <img
               height="120vh"
-              src="https://media4.giphy.com/media/nFFguNjdeotwc/200.gif"
+              src={gif1}
             />{" "}
           </button>
         </div>

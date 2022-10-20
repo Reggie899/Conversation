@@ -76,16 +76,21 @@ footer {
 
 .container h1:first-child {
   margin-bottom: 2em;
+  /* border: 2px solid magenta; */
+  padding-left: 3%;
 }
 
 .container div:nth-child(3),
 .container h1:nth-child(2) {
   /* border: 5px solid green; */
   text-align: right;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
 }
 
 .container h1:nth-child(2) {
-  padding-right: 2em;
+  /* padding-right: 2em; */
 }
 
 .frame {
@@ -275,6 +280,8 @@ footer {
   color: #9880ff;
   animation: dotFlashing 1s infinite linear alternate;
   animation-delay: 0.5s;
+  left: 50px;
+  top: 30px;
 }
 
 .dot-flashing::before,
@@ -326,10 +333,32 @@ button {
   font-size: 1em;
   font-weight: bolder;
   margin: 7%;
+  display: flex;
+  justify-content: center;
 }
 
 button:nth-child(2) {
   margin-bottom: 20%;
+}
+
+.divGifChoiceContainer {
+  /* border: 3px solid beige; */
+  display: flex;
+  justify-content: end;
+}
+
+.divGifChoice {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 200px;
+  border: 12px solid #9880ff;
+  background-color: #9880ff;
+  border-radius: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media screen and (min-width: 400px) {
@@ -338,8 +367,8 @@ button:nth-child(2) {
 } */
   .container {
     /* border: 3px solid rgb(128, 0, 0); */
-    max-width: 80vw;
-    padding: 4em 2em 2em 3em;
+    max-width: 90vw;
+    padding: 4em 0.2em 0.2em 0.2em;
   }
 }
 
@@ -351,7 +380,6 @@ button:nth-child(2) {
     max-width: 400px;
     overflow: scroll;
     height: 50vh;
-
   }
   .containerAnimation {
     margin-top: 5%;
@@ -369,6 +397,7 @@ button:nth-child(2) {
     max-width: 400px;
     margin-bottom: 20vh;
     overflow: scroll;
+    padding: 4em 2em 2em 3em;
   }
   .containerBlock {
     margin-top: 5%;
@@ -377,12 +406,12 @@ button:nth-child(2) {
     padding-top: 3%;
   }
   .container div:nth-child(3),
-.container h1:nth-child(2) {
-  /* border: 5px solid green;
+  .container h1:nth-child(2) {
+    /* border: 5px solid green;
   text-align: right; */
-  padding: 0;
-}
-button {
-  margin-right: 0;
-}
+    padding: 0;
+  }
+  button {
+    margin-right: 0;
+  }
 }

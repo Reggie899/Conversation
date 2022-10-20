@@ -18,13 +18,15 @@ export default function SubBlock3dot2() {
     setTimeout(() => setChoice(true), showChoicesTime);
   }, []); //using useEffect, because otherwise before page content changes, choices are visible again
 
+  const gif1 = "https://media.tenor.com/FjnLrLnMrCMAAAAC/meme-shrek.gif";
+
   return (
     <div className="container">
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
         <img
-          height="230vh"
+          width={"200px"}
           style={{ marginBottom: "2%" }}
           src="https://media2.giphy.com/media/SVH9y2LQUVVCRcqD7o/200w.gif?cid=82a1493bp1z255x9ggh80041ds7ac511w0tgcf9vmntrqlb7&rid=200w.gif&ct=g"
         />
@@ -35,19 +37,18 @@ export default function SubBlock3dot2() {
           <button
             onClick={() => {
               setShowFinal(
-                <img
-                  height="230vh"
-                  src="https://media.tenor.com/FjnLrLnMrCMAAAAC/meme-shrek.gif"
-                />
+                <div className="divGifChoiceContainer">
+                  <div
+                    className="divGifChoice"
+                    style={{ backgroundImage: `url(${gif1})` }}
+                  ></div>{" "}
+                </div>
               );
               setTimeout(() => setCount("4.3"), showChoicesTime);
               setChoice(false);
             }}
           >
-            <img
-              height="130vh"
-              src="https://media.tenor.com/FjnLrLnMrCMAAAAC/meme-shrek.gif"
-            />{" "}
+            <img height="130vh" src={gif1} />{" "}
           </button>
           <button
             onClick={() => {
