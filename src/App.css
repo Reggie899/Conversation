@@ -95,6 +95,10 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* max-width: 60vw;  */
+  /* min-height: 60vh; */
+  margin: 0 auto;
+  /* overflow: hidden; */
 }
 
 .container h1:nth-child(2) {
@@ -343,6 +347,9 @@ button {
   margin: 7% 0%;
   display: flex;
   justify-content: center;
+  align-self: center;
+  min-width: 200px;
+  max-width: 200px;
 }
 
 button:nth-child(2) {
@@ -378,6 +385,15 @@ button:nth-child(2) {
     max-width: 90vw;
     padding: 4em 0.2em 0.2em 0.2em;
   }
+  /* button {
+    min-width: 60vw;
+    max-width: 60vw;
+  } */
+  .container div:nth-child(3)
+  /* .container h1:nth-child(2)  */
+  {
+    /* border: 5px solid green; */
+    padding: 0;}
 }
 
 @media screen and (min-width: 450px) {

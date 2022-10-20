@@ -35,7 +35,7 @@ export default function SubBlock3dot1() {
                   setChoice(false);
                 }}
               >
-               Oh cool! Was zeichnest du? Ich lese viel und koche supergerne!
+               Oh cool! Was zeichnest du? Ich lese viel und koche super gerne!
               </button>
               <button
                 onClick={() => {

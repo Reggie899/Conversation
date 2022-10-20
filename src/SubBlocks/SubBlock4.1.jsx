@@ -26,7 +26,7 @@ export default function SubBlock4dot1() {
           ) : (
               <div>
             <h1>Am liebsten zeichne ich Augen.</h1>
-            <img width="300" src={eyePic} />
+            <img width="300" style={{marginBottom: "25px"}} src={eyePic} />
             </div>
           )}
           <h1>{showFinal}</h1>
