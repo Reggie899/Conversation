@@ -350,6 +350,7 @@ button {
   align-self: center;
   min-width: 200px;
   max-width: 200px;
+  overflow: hidden;
 }
 
 button:nth-child(2) {
