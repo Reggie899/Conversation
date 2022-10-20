@@ -20,7 +20,7 @@ export default function SubBlock1() {
 
   return (
     <div className="container">
-      {typing ? <h1 className="dot-flashing"></h1> : <h1>Hey wie geht's?</h1>}
+      {typing ? <h1 className="dot-flashing"></h1> : <h1>Hey, wie geht's?</h1>}
       <h1>{showFinal}</h1>
       {choice == true ? (
         <div>
