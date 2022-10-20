@@ -23,7 +23,9 @@ export default function SubBlock5dot5() {
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <img src="https://i2.wp.com/hypebeast.com/wp-content/blogs.dir/6/files/2017/12/2018-christmas-memes-gifs-grinch-mean-girls-0.gif?w=960" />
+        <img 
+        style={{marginBottom: "2%"}}
+        src="https://i2.wp.com/hypebeast.com/wp-content/blogs.dir/6/files/2017/12/2018-christmas-memes-gifs-grinch-mean-girls-0.gif?w=960" />
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (

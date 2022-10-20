@@ -23,7 +23,9 @@ export default function SubBlock5dot5() {
       {typing ? (
         <h1 className="dot-flashing"></h1>
       ) : (
-        <img src="https://wallpapers-clan.com/wp-content/uploads/2022/08/meme-gif-pfp-1.gif" />
+        <img 
+        style={{marginBottom: "2%"}}
+        src="https://wallpapers-clan.com/wp-content/uploads/2022/08/meme-gif-pfp-1.gif" />
       )}
       <h1>{showFinal}</h1>
       {choice == true ? (
