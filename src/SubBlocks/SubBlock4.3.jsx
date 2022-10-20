@@ -28,7 +28,7 @@ const gif2 = "https://c.tenor.com/dp_hQBGT0rIAAAAd/think-smart.gif";
       ) : (
         <img
         width={"200px"}
-        style={{marginBottom: "2%"}}
+        style={{marginBottom: "8%"}}
         src="https://media3.giphy.com/media/aFTt8wvDtqKCQ/200w.gif?cid=82a1493bcwmqvq4yi2l8hwd30q2ey9mqp8vlx8sb3llerx0z&rid=200w.gif&ct=g" />
       )}
       <h1>{showFinal}</h1>

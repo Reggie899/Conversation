@@ -29,7 +29,7 @@ export default function SubBlock5dot5() {
       ) : (
         <img 
         width={"200px"}
-        style={{marginBottom: "2%"}}
+        style={{marginBottom: "8%"}}
         src="https://i2.wp.com/hypebeast.com/wp-content/blogs.dir/6/files/2017/12/2018-christmas-memes-gifs-grinch-mean-girls-0.gif?w=960" />
       )}
       <h1>{showFinal}</h1>

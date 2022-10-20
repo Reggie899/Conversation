@@ -27,7 +27,7 @@ export default function SubBlock3dot2() {
       ) : (
         <img
           width={"200px"}
-          style={{ marginBottom: "2%" }}
+          style={{ marginBottom: "8%" }}
           src="https://media2.giphy.com/media/SVH9y2LQUVVCRcqD7o/200w.gif?cid=82a1493bp1z255x9ggh80041ds7ac511w0tgcf9vmntrqlb7&rid=200w.gif&ct=g"
         />
       )}

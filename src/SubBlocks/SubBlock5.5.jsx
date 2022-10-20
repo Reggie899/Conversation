@@ -28,7 +28,7 @@ const gif2 = "https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif";
       ) : (
         <img 
         width={"200px"}
-        style={{marginBottom: "2%"}}
+        style={{marginBottom: "8%"}}
         src="https://wallpapers-clan.com/wp-content/uploads/2022/08/meme-gif-pfp-1.gif" />
       )}
       <h1>{showFinal}</h1>

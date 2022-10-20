@@ -80,12 +80,20 @@ footer {
   padding-left: 3%;
 }
 
-.container div:nth-child(3),
+/* .container div:nth-child(3), */
 .container h1:nth-child(2) {
   /* border: 5px solid green; */
   text-align: right;
   display: flex;
   justify-content: end;
+  flex-direction: column;
+}
+
+.container div:nth-child(3) {
+  /* border: 5px solid green; */
+  text-align: right;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -332,7 +340,7 @@ button {
   color: white;
   font-size: 1em;
   font-weight: bolder;
-  margin: 7%;
+  margin: 7% 0%;
   display: flex;
   justify-content: center;
 }
@@ -397,7 +405,7 @@ button:nth-child(2) {
     max-width: 400px;
     margin-bottom: 20vh;
     overflow: scroll;
-    padding: 4em 2em 2em 3em;
+    padding: 4em 2em 2em 2em;
   }
   .containerBlock {
     margin-top: 5%;
