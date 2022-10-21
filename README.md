@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Interactive Dialogue
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+The motivation of creating this project was to build an algorythm system that provides the opportunity for the user to have an interactive conversation. The project simulates a conversation one could have on dating app. 
 
-In the project directory, you can run:
+## Structure 
 
-### `npm start`
+The project is structured in this way: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*App.js > Start Animation file and 9 main conversation components > sub 
+conversation components* 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The App.js file holds all of the 9 main conversation blocks and allows them to be wrapped up for the usage of the React Feature ("Context" ... but more about that below).
 
-### `npm test`
+Each of the 9 conversation components holds a different number of sub conversation components that result in having chosen different paths of the algorithm. They are at the same time expanding the algorithm and causing it to branch out. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+At the rate of having 2 options at every stage the branch system would expand exponentially. Because I didn't want to overcomplicate the code, I used certain paths multiple times (one unmatching the other one - sub block 3.3., one getting unmatched - sub block 4.5. and actually deciding to meet up - sub block 8.2). 
 
-### `npm run build`
+## Single page logic - moving through the conversation blocks 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As this is a single page application I used the 9 main conversation blocks to display whatever is needed. While one block is active, the others are set to "null" and simply not displayed. There is a condition set up for that within the App.js file. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The user chooses what answer they want to repond with and by clicking on it a context variable is increased by 1. The mentioned condition sees this and accordingly sets the not needed block to null, while activating the display of the needed conversation block. So if "count == 2" the second conversation block including the sub conversation block will be displayed. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## React Context - Further usage of this feature
 
-### `npm run eject`
+Not only did I use the Context system React provides to determine which conversation block should be visible, but I also used it to regulate the time certain processes take within each sub conversation block. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+--> how long the three typing dots animation is
+--> how long it takes until the two options of response appear to the user
+--> how long the chosen answer is displayed until the count is increased and we are moving on to the next conversation block
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Things to improve 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The styling of the app can certainly be improved. I tried to focus on the logic for the algorythm mainly. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Also the usage of context can be expanded even further. There are few more time settings where I could refactor the code, so they are controlled centrally and I don't need to check on every single component everytime I decide to reset a time. 
 
-## Learn More
+Even whole blocks of code could eventually be used through the context feature. I didn't see the need to do this for this project though. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Last but not least the algorithm could be improved through clearer, thematically structured sub blocks. For examole the three blocks mentioned (unmatching 3.3., being anmatched 4.5., meeting 8.2.) could be taken out of the block system that works through numeration and just summarized in theme-blocks. There could be a conversation block called "Unmatching" instead of using the sub block 3.3. That would have the advantage of not having to look through the sub blocks so much, which can be confusing, and one could more easily add more alternative components. Instead of having the pop up if the user decides to unmatch someone, a sort of thematic library could be created. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Learnings
 
-### Code Splitting
+I experienced how quickly an algorithm can "escalate" and how complex things can get. I had to draw up the options I created on a piece of paper as I lost track really fast. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+I can't praise the Context feature enough. It was really practical and so helpful to get my project running smoothly on different levels. 
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Deployed with Netlify: [https://scintillating-otter-a118f4.netlify.app/](https://scintillating-otter-a118f4.netlify.app/)
 
-### `npm run build` fails to minify
+### Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you want to contact me and even give me feedback on my project, I would love to hear from you. Please contact me on LinkedIn: [https://www.linkedin.com/in/regina-schmidt/](https://www.linkedin.com/in/regina-schmidt/) 

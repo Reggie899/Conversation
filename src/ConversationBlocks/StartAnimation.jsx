@@ -5,7 +5,7 @@ import match from "../img/Match2.png";
 
 export default function StartAnimation() {
   const { count, setCount } = useContext(Counter);
-  setTimeout(() => setCount(1), 4000);
+  setTimeout(() => setCount(0), 4000);
 
   return (
         <div className="containerAnimation">
