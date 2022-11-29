@@ -57,7 +57,7 @@ function App() {
           <div className="myCode">
             {" "}
             <a href="https://github.com/Reggie899/Conversation" target="_blank">
-              HowImetYourFather.org
+              See code
             </a>
           </div>
         </div>
